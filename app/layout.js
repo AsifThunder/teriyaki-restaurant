@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "The Signature International",
+  title: "Teriyaki - Fine Dining",
   description: "Fine dining experience crafted with pride and passion",
 };
 
