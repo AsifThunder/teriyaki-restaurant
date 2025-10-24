@@ -1,0 +1,166 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 100px 60px;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+.about-images {
+  position: relative;
+  width: 45%;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.about-img.overlay {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  width: 80%;
+  border: 3px solid #ffcc00; /* gold accent */
+  border-radius: 20px;
+}
+
+.about-text {
+  width: 45%;
+}
+
+.about-text h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+.about-text h4 {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ffcc00;
+}
+
+.about-text span {
+  font-weight: 600;
+}
+
+.about{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+  padding: 100px 10%;
+  background: #0c0c0c;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+/* Background text */
+.about-section::before {
+  content: "TASTE";
+  position: absolute;
+  font-size: 190px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.03);
+  right: 5%;
+  top: 12%;
+  letter-spacing: 15px;
+  z-index: 0;
+}
+
+.about-images {
+  position: relative;
+  width: 350px;
+  height: 280px;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  position: absolute;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.about-img.back {
+  left: -25px;
+  top: -35px;
+  opacity: 0.7;
+  transform: scale(0.9);
+  z-index: 1;
+}
+
+.about-img.front {
+  left: 45px;
+  top: -10px;
+  z-index: 2;
+  border: 3px solid #ffcc00;
+}
+
+.about-text {
+  color: #fff;
+  max-width: 550px;
+  z-index: 2;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about-text p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.about-text .highlight {
+  margin-top: 25px;
+  color: #ffcc00;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 929px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 100px; /* adds spacing between image and text naturally */
+            margin-left: -60px;
+  }
+
+  .about-images {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* centers images horizontally */
+  }
+
+  .about-text {
+    max-width: 90%;
+        margin: 0 auto;
+        margin-top: 180px;
+  }
+}

@@ -1,0 +1,127 @@
+.form-section {
+  background: radial-gradient(circle at top, #111 0%, #000 100%);
+  color: white;
+  text-align: center;
+  padding: 120px 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* faint background label */
+.form-section::before {
+  content: "RESERVE";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 190px;
+  font-weight: 900;
+  background: linear-gradient(90deg, rgba(255, 213, 107, 0.05), rgba(255, 92, 88, 0.05));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 21px;
+  z-index: 0;
+}
+
+.form-title {
+  font-size: 2.7rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ffd56b, #ff9a3c, #ff5c58);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.form-sub {
+  color: #bfbfbf;
+  font-size: 1.05rem;
+  margin-bottom: 60px;
+  z-index: 2;
+  position: relative;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.booking-form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 2;
+  position: relative;
+}
+
+.form-row {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.booking-form input,
+.booking-form textarea {
+  flex: 1;
+  padding: 15px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+  color: #777;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  border-color: #ff9a3c;
+  box-shadow: 0 0 12px rgba(255, 153, 60, 0.25);
+}
+
+.form-btn {
+  background: linear-gradient(90deg, #ffd56b, #ff9a3c, #ff5c58);
+  color: #000;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 15px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(255, 153, 60, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-section::before {
+    font-size: 110px;
+  }
+}
+
+@media (max-width: 900px) {
+    .form-section::before {
+        font-size: 30px;
+        margin-top: -10%;
+        margin-left: 9px;
+    }
+}
+
