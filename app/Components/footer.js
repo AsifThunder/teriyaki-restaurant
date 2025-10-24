@@ -4,7 +4,7 @@ export default function footer() {
     return(
         <footer className="footer">
   <div className="footer-content">
-    <h2 className="footer-logo">the <span>Signature</span> <small>INTERNATIONAL</small></h2>
+    <h2 className="footer-logo">the <span>Teriyaki</span> <small>with you always</small></h2>
 
     <ul className="footer-links">
       <li>Home</li>
